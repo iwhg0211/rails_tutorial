@@ -60,6 +60,8 @@ Rails.application.configure do
 
   # Suppress logger output for asset requests.
   config.assets.quiet = true
+  
+  config.web_console.allowed_ips = '127.0.0.0/127.255.255.255, ::1'
 
   # Raises error for missing translations.
   # config.i18n.raise_on_missing_translations = true
